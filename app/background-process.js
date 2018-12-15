@@ -28,6 +28,9 @@ import * as beakerProtocol from './background-process/protocols/beaker'
 import * as beakerFaviconProtocol from './background-process/protocols/beaker-favicon'
 import * as beakerHiddenWindowProtocol from './background-process/protocols/beaker-hidden-window'
 
+import * as xttProtocol from './background-process/protocols/xtt'
+import * as startProxyProtocol from './background-process/protocols/start-proxy'
+
 import * as testDriver from './background-process/test-driver'
 import * as openURL from './background-process/open-url'
 
@@ -125,6 +128,9 @@ app.on('ready', async function () {
       throw new Error('Failed to create protocol: dat')
     }
   })
+
+  xttProtocol.setup()
+  startProxyProtocol.setup()
 
   // configure chromium's permissions for the protocols
   protocol.registerServiceWorkerSchemes(['dat'])

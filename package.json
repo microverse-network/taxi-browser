@@ -1,6 +1,6 @@
 {
   "bin": "./tasks/start-cli.js",
-  "name": "beakerbrowser",
+  "name": "@microverse-network/taxi-browser",
   "devDependencies": {
     "browserify": "^13.0.1",
     "electron": "3.0.9",
@@ -28,7 +28,7 @@
     "rcedit": "^0.5.0"
   },
   "build": {
-    "appId": "com.pfrazee.beaker-browser",
+    "appId": "com.microverse-network.taxi-browser",
     "asar": true,
     "asarUnpack": [
       "./node_modules/sodium-native/**"
@@ -53,7 +53,7 @@
     "appImage": {
       "category": "Network",
       "desktop": {
-        "Name": "Beaker Browser",
+        "Name": "Taxi Browser",
         "GenericName": "Web Browser",
         "Type": "Application",
         "Terminal": false,
@@ -87,10 +87,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/beakerbrowser/beaker"
+    "url": "https://github.com/microverse-network/taxi-browser"
   },
   "bugs": {
-    "url": "https://github.com/beakerbrowser/beaker/issues"
+    "url": "https://github.com/microverse-network/taxi-browser/issues"
   },
-  "homepage": "https://beakerbrowser.com/"
+  "homepage": "https://taxi-browser.com/"
 }
